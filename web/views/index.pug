@@ -1,0 +1,12 @@
+html
+  head
+    title Thermostat Web Interface
+    script(src='scripts/app.js')
+  body
+    h2 Temperature: #{temperature}
+    h2 Set Point:   #{setpoint}
+    h2 AC: #{ac ? "On" : "Off"}
+    h2 Heat: #{heat ? "On" : "Off"}
+
+    button(onclick='up()') Up
+    button(onclick='down()') Down
